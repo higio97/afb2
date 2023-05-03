@@ -50,8 +50,8 @@ pic_main = os.getenv("PIC_MAIN", "#")
 topup_link = os.getenv("TOPUP_LINK", "")
 # =========================================================== #
 pesan_topup = os.getenv("PESAN_TOPUP", f"""
-Hallo {mention},
-Untuk Top up Coin, Gunakan Tombol Dibawah ⬇️.
+Hallo
+Top up Coin, Klik Tombol Dibawah ⬇️.
 Konfirmasi ke Admin, Jangan Lupa Bukti Pembayarannya 🥰,
 jika Tidak Konfirmasi ke Admin, Maka Di Anggap Sedekah.
 """
