@@ -50,10 +50,10 @@ pic_main = os.getenv("PIC_MAIN", "#")
 topup_link = os.getenv("TOPUP_LINK", "")
 # =========================================================== #
 pesan_topup = os.getenv("PESAN_TOPUP", f"""
-Halo kak.
-untuk melakukan Top up coin, gunakan tombol dibawah ⬇️.
-kemudian konfirmasi ke admin ya jangan lupa bukti transaksinya 🥰,
-jika tidak melakukan konfirmasi ke admin, maka kami anggap sedekah.
+Hallo {mention},
+Untuk Top up Coin, Gunakan Tombol Dibawah ⬇️.
+Konfirmasi ke Admin, Jangan Lupa Bukti Pembayarannya 🥰,
+jika Tidak Konfirmasi ke Admin, Maka Di Anggap Sedekah.
 """
 )
 pesan_join = os.getenv("PESAN_JOIN", "Tidak Dapat Diakses Harap Join Terlebih Dahulu")
