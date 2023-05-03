@@ -58,10 +58,10 @@ class Helper:
         link_3 = await self.bot.export_chat_invite_link(config.channel_3)
         markup = InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("📢 Channel Information", url=link_3)],
+                [InlineKeyboardButton("🔗 Channel Partnership", url=link_3)],
                 [
-                    InlineKeyboardButton("⚡ Channel base", url=link_1),
-                    InlineKeyboardButton("🏠 Group base", url=link_2),
+                    InlineKeyboardButton("💌 Channel base", url=link_1),
+                    InlineKeyboardButton("🗣️ Group base", url=link_2),
                 ],
                 [
                     InlineKeyboardButton(
