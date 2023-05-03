@@ -9,17 +9,17 @@ bot_token = os.getenv("BOT_TOKEN", "#")
 # =========================================================== #
 
 db_url = os.getenv("DB_URL", "#")
-db_name = os.getenv("DB_NAME", "telegram") #bisa diganti sesuai kebutuhan
+db_name = os.getenv("DB_NAME", "#") #bisa diganti sesuai kebutuhan
 # =========================================================== #
 
 channel_1 = int(os.getenv("CHANNEL_1", "#"))
 channel_2 = int(os.getenv("CHANNEL_2", "#")) #untuk group comentar user 
-channel_3 = int(os.getenv("CHANNEL_3", ""))
+channel_3 = int(os.getenv("CHANNEL_3", "#"))
 channel_log = int(os.getenv("CHANNEL_LOG", "#"))
 # =========================================================== #
 
-id_admin = int(os.getenv("ID_ADMIN", "907544310"))
-admin_username = os.getenv("ADMIN_USERNAME", "troublescope")
+id_admin = int(os.getenv("ID_ADMIN", "#"))
+admin_username = os.getenv("ADMIN_USERNAME", "#")
 # =========================================================== #
 
 batas_kirim = int(os.getenv("BATAS_KIRIM", 5))
@@ -40,13 +40,13 @@ biaya_gfrent = int(os.getenv("BIAYA_GFRENT", 40))
 biaya_bfrent = int(os.getenv("BIAYA_BFRENT", 30))
 # =========================================================== #
 
-hastag = os.getenv("HASTAG", "#FypGirl #FypBoy #FypAsk #FypStory").replace(" ", "|").lower()
+hastag = os.getenv("HASTAG", "#AlterGirl #AlterBoy #AlterAsk #AlterFind #AlterSpill #AlterStory").replace(" ", "|").lower()
 # =========================================================== #
 
-pic_boy = os.getenv("PIC_BOY", "https://telegra.ph/file/3686aad6f6385f775b379.jpg")
-pic_girl = os.getenv("PIC_GIRL", "https://telegra.ph/file/8dfde5a5e085e78bd17e4.jpg")
-pic_nonmember= os.getenv("PIC_NONMEMBER", "https://telegra.ph/file/c8f39a51bb5054433e7e9.jpg")
-pic_main = os.getenv("PIC_MAIN", "https://telegra.ph/file/8d7242ca9a11916fcea45.jpg")
+pic_boy = os.getenv("PIC_BOY", "#")
+pic_girl = os.getenv("PIC_GIRL", "#")
+pic_nonmember= os.getenv("PIC_NONMEMBER", "#")
+pic_main = os.getenv("PIC_MAIN", "#")
 topup_link = os.getenv("TOPUP_LINK", "")
 # =========================================================== #
 pesan_topup = os.getenv("PESAN_TOPUP", f"""
@@ -57,11 +57,14 @@ jika tidak melakukan konfirmasi ke admin, maka kami anggap sedekah.
 """
 )
 pesan_join = os.getenv("PESAN_JOIN", "Tidak Dapat Diakses Harap Join Terlebih Dahulu")
-start_msg = os.getenv("START_MSG", "Hai {mention} 🌱\n\nSaya adalah Bot Auto Post, Semua Pesan Yang Kamu Kirim Akan Masuk Ke Channel @findyourpartnerbase Secara Anonymous. Untuk Bantuan Ketik /help")
+start_msg = os.getenv("START_MSG", "Hai {mention} 🌱\n\n<b>Alter FWB Bot</b> adalah Bot Auto Post, Semua Pesan Yang Kamu Kirim Akan Masuk Ke Channel @AlterFWB1 Secara Anonymous. Untuk Bantuan Ketik /help")
 
 gagalkirim_msg = os.getenv("GAGAL_KIRIM", """
 {mention}, Pesan Mu Gagal Terkirim Silahkan Gunakan Hashtag Berikut:
-#FypGirl / #FypBoy Untuk cari partner.
-#FypAsk Untuk bertanya 
-#FypStory Untuk berbagi cerita.
+
+#AlterBoy / #AlterGirl (Untuk Mencari Pasangan, Teman , Partner FWB)
+#AlterAsk (Untuk Bertanya)
+#AlterStory (Untuk Berbagi Cerita)
+#AlterSpill (Untuk Spill Masalah)
+#AlterFind (Untuk Mencari Pasangan, Teman, Partner FWB)
 """)
